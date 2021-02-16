@@ -105,7 +105,7 @@ namespace Prism.Navigation.Xaml
 
                 page.SetValue(NavigationServiceProperty, navService);
             }
-            else if(navService is IPageAware pa && pa.Page != page)
+            else if (navService is IPageAware pa && pa.Page != page)
             {
                 var scope = container.CreateScope();
                 page.SetValue(NavigationScopeProperty, scope);
